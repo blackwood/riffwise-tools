@@ -1,13 +1,16 @@
-/*The Generator*/
-
 function equalWeight(accidental) {
+  
   return accidental[Math.floor(Math.random()*accidental.length)]
+  
 }
 
 function getNested(pitch) {
+  
   var key = equalWeight(pitch);
+  
   while (Array.isArray(key)) { key = equalWeight(key); } 
   return key;
+  
 }
 
 function generateExercise() {
@@ -19,19 +22,13 @@ function generateExercise() {
   var exercise = equalWeight([equalWeight(chords) + " chord", equalWeight(scales) + " scale"]);
   
   return getNested(roots) + exercise;
+  
 }
-
-/**
- * Run on load
- */
-window.onload = function() {
-// 	generateExercise();
-};
 
 var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
   render: function() {
     return (
-      React.createElement("div", {class: "exercisePrompt standout"}, 
+      React.createElement("div", {className: "exercisePrompt standout"}, 
         this.props.exercise
       )
     );
@@ -40,7 +37,7 @@ var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
 
 var ExerciseGenerator = React.createClass({displayName: "ExerciseGenerator",
   getInitialState: function() {
-    return {newExercise: ''};
+    return {exercise: 'Click for new exercises.'};
   },
   handleSubmit: function(e) {
     e.preventDefault();
@@ -50,18 +47,16 @@ var ExerciseGenerator = React.createClass({displayName: "ExerciseGenerator",
   render: function() {
     return (
       React.createElement("form", {onSubmit: this.handleSubmit}, 
-
-        React.createElement("div", {class: "well"}, 
-  		    React.createElement(CurrentExercise, {exercise: this.state.newExercise})
+        React.createElement("div", {className: "well"}, 
+  		    React.createElement(CurrentExercise, {exercise: this.state.exercise})
       	), 
-      	React.createElement("button", null, "New Exercise")
-
+      	React.createElement("button", {className: "btn btn-default"}, "New Exercise")
       )
     );
   }
 });
 
 React.render(
-  React.createElement(CurrentExercise, null),
+  React.createElement(ExerciseGenerator, null),
   document.getElementById('content')
 );

@@ -1,13 +1,16 @@
-/*The Generator*/
-
 function equalWeight(accidental) {
+  
   return accidental[Math.floor(Math.random()*accidental.length)]
+  
 }
 
 function getNested(pitch) {
+  
   var key = equalWeight(pitch);
+  
   while (Array.isArray(key)) { key = equalWeight(key); } 
   return key;
+  
 }
 
 function generateExercise() {
@@ -19,19 +22,13 @@ function generateExercise() {
   var exercise = equalWeight([equalWeight(chords) + " chord", equalWeight(scales) + " scale"]);
   
   return getNested(roots) + exercise;
+  
 }
-
-/**
- * Run on load
- */
-window.onload = function() {
-// 	generateExercise();
-};
 
 var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
   render: function() {
     return (
-      <div class="exercisePrompt standout"> 
+      <div className="exercisePrompt standout"> 
         {this.props.exercise}
       </div>
     );
@@ -40,7 +37,7 @@ var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
 
 var ExerciseGenerator = React.createClass({
   getInitialState: function() {
-    return {newExercise: ''};
+    return {exercise: 'Click for new exercises.'};
   },
   handleSubmit: function(e) {
     e.preventDefault();
@@ -50,18 +47,16 @@ var ExerciseGenerator = React.createClass({
   render: function() {
     return (
       <form onSubmit={this.handleSubmit}>
-
-        <div class="well">
-  		    <CurrentExercise exercise={this.state.newExercise}/>
+        <div className="well">
+  		    <CurrentExercise exercise={this.state.exercise}/>
       	</div>
-      	<button>New Exercise</button>
-
+      	<button className="btn btn-default">New Exercise</button>
       </form>
     );
   }
 });
 
 React.render(
-  <CurrentExercise />,
+  <ExerciseGenerator />,
   document.getElementById('content')
 );
