@@ -18,12 +18,50 @@ function generateExercise() {
   var scales = ["major","natural minor","ionian","dorian","phrygian","lydian","mixolydian","aeolian","locrian","harmonic minor","melodic minor","whole tone","phrygian dominant","pentatonic major","pentatonic minor","blues major","blues minor"];
   var exercise = equalWeight([equalWeight(chords) + " chord", equalWeight(scales) + " scale"]);
   
-  currentExercise.innerHTML = getNested(roots) + exercise;
+  return getNested(roots) + exercise;
 }
 
 /**
  * Run on load
  */
 window.onload = function() {
-	generateExercise();
+// 	generateExercise();
 };
+
+var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
+  render: function() {
+    return (
+      <div class="exercisePrompt standout"> 
+        {this.props.exercise}
+      </div>
+    );
+  }
+});
+
+var ExerciseGenerator = React.createClass({
+  getInitialState: function() {
+    return {newExercise: ''};
+  },
+  handleSubmit: function(e) {
+    e.preventDefault();
+    var newExercise = generateExercise();
+    this.setState({exercise: newExercise});
+  },
+  render: function() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+
+        <div class="well">
+  		    <CurrentExercise exercise={this.state.newExercise}/>
+      	</div>
+      	<button>New Exercise</button>
+
+      </form>
+    );
+  }
+});
+
+React.render(
+  <CurrentExercise />,
+  document.getElementById('content')
+);

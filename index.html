@@ -4,6 +4,7 @@
 	<link href="fretstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="fretstrap/css/custom.css" rel="stylesheet" type="text/css" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="/bower_components/react/react.js"></script>
 	<title>FretScored</title>
 </head>
 <body>
@@ -15,24 +16,13 @@
 		</h4>
 	</div>
 	
-	<div class="well">
-		<p class="standout" id="currentExercise">
-			Exercise
-		</p>
-	</div>
-
-	<button class="btn btn-default emphasize" onclick='theGenerator()' onkeypress="theGenerator()">New Exercise</button>
+	<div id="content"></div>
 	
 	<div class="footer">
 		<hr>
 		<p>Copyright MBlackwood 2013-<script>document.write(new Date().getFullYear())</script></p>
 	</div>
-	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
 	<!--TheGenerator-->
 	<script src="/build/app.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--script src="fretstrap/js/bootstrap.min.js"></script-->
 </body>
 </html>
