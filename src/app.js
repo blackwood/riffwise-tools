@@ -48,9 +48,9 @@ var ExerciseGenerator = React.createClass({
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="well">
-  		    <CurrentExercise exercise={this.state.exercise}/>
-      	</div>
-      	<button className="btn btn-default">New Exercise</button>
+          <CurrentExercise exercise={this.state.exercise}/>
+        </div>
+        <button className="btn btn-default">New Exercise</button>
       </form>
     );
   }
