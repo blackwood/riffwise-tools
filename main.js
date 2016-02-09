@@ -25,38 +25,38 @@ function generateExercise() {
   
 }
 
-var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
-  render: function() {
-    return (
-      <div className="exercisePrompt standout"> 
-        {this.props.exercise}
-      </div>
-    );
-  }
-});
+// var CurrentExercise = React.createClass({displayName: "ExercisePrompt",
+//   render: function() {
+//     return (
+//       <div className="exercisePrompt standout"> 
+//         {this.props.exercise}
+//       </div>
+//     );
+//   }
+// });
 
-var ExerciseGenerator = React.createClass({
-  getInitialState: function() {
-    return {exercise: 'Click for new exercises.'};
-  },
-  handleSubmit: function(e) {
-    e.preventDefault();
-    var newExercise = generateExercise();
-    this.setState({exercise: newExercise});
-  },
-  render: function() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <div className="well">
-          <CurrentExercise exercise={this.state.exercise}/>
-        </div>
-        <button className="btn btn-default">New Exercise</button>
-      </form>
-    );
-  }
-});
+// var ExerciseGenerator = React.createClass({
+//   getInitialState: function() {
+//     return {exercise: 'Click for new exercises.'};
+//   },
+//   handleSubmit: function(e) {
+//     e.preventDefault();
+//     var newExercise = generateExercise();
+//     this.setState({exercise: newExercise});
+//   },
+//   render: function() {
+//     return (
+//       <form onSubmit={this.handleSubmit}>
+//         <div className="well">
+//           <CurrentExercise exercise={this.state.exercise}/>
+//         </div>
+//         <button className="btn btn-default">New Exercise</button>
+//       </form>
+//     );
+//   }
+// });
 
-React.render(
-  <ExerciseGenerator />,
-  document.getElementById('content')
-);
+// React.render(
+//   <ExerciseGenerator />,
+//   document.getElementById('content')
+// );

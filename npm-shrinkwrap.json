@@ -1,0 +1,231 @@
+{
+  "name": "fretscored",
+  "version": "1.0.0",
+  "dependencies": {
+    "accidental-value": {
+      "version": "1.0.0",
+      "from": "accidental-value@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/accidental-value/-/accidental-value-1.0.0.tgz"
+    },
+    "amdefine": {
+      "version": "1.0.0",
+      "from": "amdefine@>=0.0.4",
+      "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
+    },
+    "base62": {
+      "version": "0.1.1",
+      "from": "base62@0.1.1",
+      "resolved": "https://registry.npmjs.org/base62/-/base62-0.1.1.tgz"
+    },
+    "basscss": {
+      "version": "7.1.1",
+      "from": "basscss@latest",
+      "resolved": "https://registry.npmjs.org/basscss/-/basscss-7.1.1.tgz"
+    },
+    "basscss-align": {
+      "version": "1.0.1",
+      "from": "basscss-align@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-align/-/basscss-align-1.0.1.tgz"
+    },
+    "basscss-background-colors": {
+      "version": "1.1.3",
+      "from": "basscss-background-colors@>=1.1.2 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-background-colors/-/basscss-background-colors-1.1.3.tgz"
+    },
+    "basscss-base-forms": {
+      "version": "2.0.2",
+      "from": "basscss-base-forms@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-base-forms/-/basscss-base-forms-2.0.2.tgz"
+    },
+    "basscss-base-reset": {
+      "version": "2.0.3",
+      "from": "basscss-base-reset@>=2.0.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-base-reset/-/basscss-base-reset-2.0.3.tgz"
+    },
+    "basscss-base-tables": {
+      "version": "1.0.2",
+      "from": "basscss-base-tables@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-base-tables/-/basscss-base-tables-1.0.2.tgz"
+    },
+    "basscss-base-typography": {
+      "version": "2.0.3",
+      "from": "basscss-base-typography@>=2.0.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-base-typography/-/basscss-base-typography-2.0.3.tgz"
+    },
+    "basscss-border": {
+      "version": "3.0.4",
+      "from": "basscss-border@>=3.0.1 <4.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-border/-/basscss-border-3.0.4.tgz"
+    },
+    "basscss-border-colors": {
+      "version": "1.1.2",
+      "from": "basscss-border-colors@>=1.1.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-border-colors/-/basscss-border-colors-1.1.2.tgz"
+    },
+    "basscss-borders": {
+      "version": "2.0.5",
+      "from": "basscss-borders@>=2.0.5 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-borders/-/basscss-borders-2.0.5.tgz"
+    },
+    "basscss-btn": {
+      "version": "1.0.5",
+      "from": "basscss-btn@>=1.0.4 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-btn/-/basscss-btn-1.0.5.tgz"
+    },
+    "basscss-btn-outline": {
+      "version": "1.0.2",
+      "from": "basscss-btn-outline@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-btn-outline/-/basscss-btn-outline-1.0.2.tgz"
+    },
+    "basscss-btn-primary": {
+      "version": "1.0.2",
+      "from": "basscss-btn-primary@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-btn-primary/-/basscss-btn-primary-1.0.2.tgz"
+    },
+    "basscss-color-base": {
+      "version": "2.0.2",
+      "from": "basscss-color-base@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-color-base/-/basscss-color-base-2.0.2.tgz"
+    },
+    "basscss-color-forms": {
+      "version": "3.0.2",
+      "from": "basscss-color-forms@>=3.0.1 <4.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-color-forms/-/basscss-color-forms-3.0.2.tgz"
+    },
+    "basscss-color-tables": {
+      "version": "1.0.4",
+      "from": "basscss-color-tables@>=1.0.3 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-color-tables/-/basscss-color-tables-1.0.4.tgz"
+    },
+    "basscss-colors": {
+      "version": "2.0.2",
+      "from": "basscss-colors@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-colors/-/basscss-colors-2.0.2.tgz"
+    },
+    "basscss-defaults": {
+      "version": "2.1.3",
+      "from": "basscss-defaults@>=2.1.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-defaults/-/basscss-defaults-2.1.3.tgz"
+    },
+    "basscss-grid": {
+      "version": "1.0.6",
+      "from": "basscss-grid@>=1.0.6 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-grid/-/basscss-grid-1.0.6.tgz"
+    },
+    "basscss-layout": {
+      "version": "3.1.0",
+      "from": "basscss-layout@>=3.0.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-layout/-/basscss-layout-3.1.0.tgz"
+    },
+    "basscss-margin": {
+      "version": "1.0.7",
+      "from": "basscss-margin@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-margin/-/basscss-margin-1.0.7.tgz"
+    },
+    "basscss-padding": {
+      "version": "1.1.3",
+      "from": "basscss-padding@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-padding/-/basscss-padding-1.1.3.tgz"
+    },
+    "basscss-position": {
+      "version": "2.0.2",
+      "from": "basscss-position@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-position/-/basscss-position-2.0.2.tgz"
+    },
+    "basscss-positions": {
+      "version": "1.0.5",
+      "from": "basscss-positions@>=1.0.5 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-positions/-/basscss-positions-1.0.5.tgz"
+    },
+    "basscss-responsive-states": {
+      "version": "1.0.6",
+      "from": "basscss-responsive-states@>=1.0.6 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-responsive-states/-/basscss-responsive-states-1.0.6.tgz"
+    },
+    "basscss-type-scale": {
+      "version": "1.0.3",
+      "from": "basscss-type-scale@>=1.0.3 <2.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-type-scale/-/basscss-type-scale-1.0.3.tgz"
+    },
+    "basscss-typography": {
+      "version": "3.0.0",
+      "from": "basscss-typography@>=3.0.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/basscss-typography/-/basscss-typography-3.0.0.tgz"
+    },
+    "colors.css": {
+      "version": "2.3.0",
+      "from": "colors.css@>=2.0.4 <3.0.0",
+      "resolved": "https://registry.npmjs.org/colors.css/-/colors.css-2.3.0.tgz"
+    },
+    "daccord": {
+      "version": "1.1.0",
+      "from": "daccord@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/daccord/-/daccord-1.1.0.tgz"
+    },
+    "envify": {
+      "version": "3.4.0",
+      "from": "envify@>=3.4.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/envify/-/envify-3.4.0.tgz"
+    },
+    "esprima-fb": {
+      "version": "13001.1001.0-dev-harmony-fb",
+      "from": "esprima-fb@13001.1001.0-dev-harmony-fb",
+      "resolved": "https://registry.npmjs.org/esprima-fb/-/esprima-fb-13001.1001.0-dev-harmony-fb.tgz"
+    },
+    "flex-object": {
+      "version": "2.0.5",
+      "from": "flex-object@>=2.0.4 <3.0.0",
+      "resolved": "https://registry.npmjs.org/flex-object/-/flex-object-2.0.5.tgz"
+    },
+    "helmholtz": {
+      "version": "2.0.2",
+      "from": "helmholtz@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/helmholtz/-/helmholtz-2.0.2.tgz"
+    },
+    "interval-coords": {
+      "version": "1.1.1",
+      "from": "interval-coords@>=1.1.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/interval-coords/-/interval-coords-1.1.1.tgz"
+    },
+    "jstransform": {
+      "version": "10.1.0",
+      "from": "jstransform@>=10.0.1 <11.0.0",
+      "resolved": "https://registry.npmjs.org/jstransform/-/jstransform-10.1.0.tgz"
+    },
+    "notecoord": {
+      "version": "1.1.0",
+      "from": "notecoord@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/notecoord/-/notecoord-1.1.0.tgz"
+    },
+    "pitch-fq": {
+      "version": "1.0.0",
+      "from": "pitch-fq@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/pitch-fq/-/pitch-fq-1.0.0.tgz"
+    },
+    "scientific-notation": {
+      "version": "1.0.2",
+      "from": "scientific-notation@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/scientific-notation/-/scientific-notation-1.0.2.tgz"
+    },
+    "source-map": {
+      "version": "0.1.31",
+      "from": "source-map@0.1.31",
+      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.31.tgz"
+    },
+    "teoria": {
+      "version": "2.2.0",
+      "from": "teoria@latest",
+      "resolved": "https://registry.npmjs.org/teoria/-/teoria-2.2.0.tgz"
+    },
+    "through": {
+      "version": "2.3.8",
+      "from": "through@>=2.3.4 <2.4.0",
+      "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
+    },
+    "vue": {
+      "version": "1.0.16",
+      "from": "vue@latest",
+      "resolved": "https://registry.npmjs.org/vue/-/vue-1.0.16.tgz"
+    }
+  }
+}

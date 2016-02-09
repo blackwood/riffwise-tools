@@ -1,28 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-	<link href="fretstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="fretstrap/css/custom.css" rel="stylesheet" type="text/css" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="bower_components/react/react.js"></script>
 	<title>FretScored</title>
+	<link href="node_modules/basscss/css/basscss.min.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="node_modules/vue/dist/vue.min.js"></script>
 </head>
 <body>
-	
+	<section class="main container p1">
+		
 	<div class="header">
 		<h1>FretScored</h1>
-		<h4>
-			A guitar player's generator for endless exercises
-		</h4>
+		<p class="h3">A guitar player's generator for endless exercises</p>
 	</div>
 	
-	<div id="content"></div>
+	<div id="generator">
+		
+	</div>
 	
 	<div class="footer">
 		<hr>
 		<p>Copyright blackwood <script>document.write(new Date().getFullYear())</script></p>
 	</div>
-	<!--TheGenerator-->
-	<script src="build/app.js"></script>
+	
+	</section><!-- /.main.container -->
+	<!-- main script -->
+	<script src="main.js"></script>
 </body>
 </html>
