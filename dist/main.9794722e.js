@@ -1031,4 +1031,4 @@ var ExerciseGenerator = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(ExerciseGenerator, null), document.getElementById("generator"));
 },{"react":14,"react-dom":15,"./constants":12}]},{},[7], null)
-//# sourceMappingURL=/main.9794722e.map
+//# sourceMappingURL=main.9794722e.map

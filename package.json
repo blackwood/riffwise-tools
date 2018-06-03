@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel index.html",
-    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
+    "build":
+      "rm -rf dist; cross-env NODE_ENV=production parcel build index.html --no-minify --public-url ./",
+    "deploy":
+      "git push origin `git subtree split --prefix dist gh-pages`:gh-pages --force",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
