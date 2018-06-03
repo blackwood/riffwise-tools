@@ -4,6 +4,8 @@
   "description": "endless guitar exercises",
   "main": "main.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +19,14 @@
   },
   "homepage": "https://github.com/blackwood/fretscored#readme",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "basscss": "^7.1.1",
-    "teoria": "^2.2.0",
-    "vue": "^1.0.16"
+    "parcel-bundler": "^1.8.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "teoria": "^2.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
   }
 }
