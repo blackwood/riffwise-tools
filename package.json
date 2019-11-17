@@ -28,6 +28,8 @@
     "teoria": "^2.2.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "cross-env": "^5.2.1"
   }
 }
