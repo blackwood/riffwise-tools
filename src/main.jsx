@@ -50,4 +50,18 @@ class ExerciseGenerator extends React.Component {
   }
 }
 
-ReactDOM.render(<ExerciseGenerator />, document.getElementById('generator'));
+const MainPage = () => (
+  <React.Fragment>
+    <div class="header">
+      <h1>riffwise</h1>
+      <p class="h3">super-flashcards for the fretboard</p>
+    </div>
+    <ExerciseGenerator />
+    <div class="footer">
+      <hr />
+      <p>Copyright © {new Date().getFullYear()} blackwood</p>
+    </div>
+  </React.Fragment>
+);
+
+ReactDOM.render(<MainPage />, document.getElementById('app'));
