@@ -1,6 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { roots, chords, scales } from "./constants";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { roots, chords, scales } from './constants';
+
+const scaleNames = Object.keys(scales);
 
 const equalWeight = tuple => tuple[Math.floor(Math.random() * tuple.length)];
 
@@ -12,11 +14,8 @@ function getNested(pitch) {
   return key;
 }
 
-function generateExercise(roots = [], chords = [], scales = []) {
-  let exercise = equalWeight([
-    equalWeight(chords) + " chord",
-    equalWeight(scales) + " scale"
-  ]);
+function generateExercise(roots = [], chords = [], scaleNames = []) {
+  let exercise = equalWeight([equalWeight(chords) + ' chord', equalWeight(scaleNames) + ' scale']);
   return getNested(roots) + exercise;
 }
 
@@ -24,16 +23,16 @@ class ExerciseGenerator extends React.Component {
   constructor() {
     super();
     this.state = {
-      exercise: ""
+      exercise: '\u00A0'
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   getInitialState() {
-    return { exercise: "Click for new exercises." };
+    return { exercise: 'Click for new exercises.' };
   }
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({ exercise: generateExercise(roots, chords, scales) });
+    this.setState({ exercise: generateExercise(roots, chords, scaleNames) });
   }
   render() {
     const {
@@ -51,4 +50,4 @@ class ExerciseGenerator extends React.Component {
   }
 }
 
-ReactDOM.render(<ExerciseGenerator />, document.getElementById("generator"));
+ReactDOM.render(<ExerciseGenerator />, document.getElementById('generator'));

@@ -1,35 +1,31 @@
 <html>
+  <head>
+    <title>riffwise</title>
+    <link href="./node_modules/basscss/css/basscss.min.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
 
-<head>
-	<title>FretScored</title>
-	<link href="./node_modules/basscss/css/basscss.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="./main.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+  <body>
+    <section class="main container p1">
+      <div class="header">
+        <h1>riffwise</h1>
+        <p class="h3">super-flashcards for the fretboard</p>
+      </div>
 
-<body>
-	<section class="main container p1">
+      <div id="generator"></div>
 
-		<div class="header">
-			<h1>FretScored</h1>
-			<p class="h3">A guitar player's generator for endless exercises</p>
-		</div>
-
-		<div id="generator">
-
-		</div>
-
-		<div class="footer">
-			<hr>
-			<p>Copyright blackwood
-				<script>document.write(new Date().getFullYear())</script>
-			</p>
-		</div>
-
-	</section>
-	<!-- /.main.container -->
-	<!-- main script -->
-	<script src="./src/main.jsx"></script>
-</body>
-
+      <div class="footer">
+        <hr />
+        <p>
+          Copyright blackwood
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </section>
+    <!-- /.main.container -->
+    <!-- main script -->
+    <script src="./src/main.jsx"></script>
+  </body>
 </html>
