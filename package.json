@@ -31,7 +31,7 @@
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
     "react-is": ">= 16.8.0",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "styled-components": "^5.0.1",
     "teoria": "^2.2.0"
   },
